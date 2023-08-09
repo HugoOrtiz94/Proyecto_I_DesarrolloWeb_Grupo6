@@ -462,7 +462,7 @@ footer .umg_containerFooter {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
   .umg_container .row {
     display: flex;
     flex-direction: column;
@@ -472,12 +472,14 @@ footer .umg_containerFooter {
   .umg_container .row .col-5 {
     width: 100%;
   }
-
+@media (max-width: 768px){
   .umg_btnConta {
-    width: 15rem !important;
+    color: white;
+    width: auto;
     justify-content: center;
     display: flex;
   }
+} 
 
   #caracteristicas .row {
     display: flex;
