@@ -1,0 +1,502 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.25em;
+}
+
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: rgb(45, 15, 245);
+}
+
+button:hover {
+  background-color: rgb(28, 17, 232);
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.color-acento {
+  color: rgb(15, 22, 221);
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+}
+
+.umg_container{
+    padding-top: 2rem!important;
+    padding-bottom: 2rem!important;
+}
+
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: rgb(70, 19, 238);
+  font-size: 1.6em;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: rgb(31, 20, 244);
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../media/fondo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  /*    color: white;*/
+  display: inline-block;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff8000,
+    #63fa0c,
+    #fafa08,
+    #fefeff,
+    #a1d1f4,
+    #ff00ff
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background-position 0.3s;
+}
+
+#hero h1:hover {
+  background-size: 200% 200%;
+  background-position: 100%;
+}
+
+#hero button {
+  font-size: 1.75em;
+}
+
+.umg_container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#nuestros-programas {
+  background-color: rgb(19, 4, 118);
+  color: white;
+  text-align: center;
+}
+
+#nuestros-programas .container {
+  padding: 150px 12px;
+}
+
+#nuestros-programas h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#nuestros-programas p {
+  margin-top: 1;
+  display: none;
+}
+
+#nuestros-programas .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.carta:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../media/planBasico.jpg");
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../media/intermedio.jpg");
+}
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../media/premium.jpg");
+}
+
+#container_Information {
+  background: linear-gradient(
+    45deg,
+    rgb(10, 4, 133),
+    rgb(38, 24, 149),
+    rgb(40, 20, 222)
+  );
+  color: rgb(255, 253, 253);
+  max-width: 100%;
+  height: 20rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#container_Information .row {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#final h2 {
+  font-size: 9vw;
+}
+#final .parrafofinal {
+  margin: 90px;
+  padding: 15px;
+}
+#final button {
+  font-size: 5vw;
+}
+
+footer {
+  background-color: rgb(230, 230, 230);
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.img_infor {
+  animation: zoom 8s infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.6);
+  }
+  60% {
+    transform: scale(0.8);
+  }
+}
+
+footer .umg_containerFooter {
+  display: flex;
+  justify-content: center;
+  background: #0000003d;
+  max-width: 100%;
+  height: 5rem;
+}
+
+.umg_card ul {
+  text-align: start;
+}
+
+.umg_card .card-body {
+  background: #323232;
+  color: aliceblue;
+}
+
+@media (min-width: 850px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+
+  #hero h1 {
+    font-size: 5em;
+  }
+
+  .umg_container .texto {
+    width: auto;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .umg_container h2 {
+    margin-top: 0px;
+  }
+
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-container img {
+    height: 700px;
+    width: 700px;
+  }
+
+  #nuestros-programas .programas {
+    display: flex;
+    justify-content: center;
+  }
+
+  #nuestros-programas p {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #nuestros-programas h2 {
+    font-size: 4em;
+  }
+
+  #nuestros-programas h3 {
+    margin-top: 0;
+  }
+
+  #nuestros-programas .carta {
+    padding: 50px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../media/planBasico.jpg");
+  }
+
+  .carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../media/intermedio.jpg");
+  }
+
+  .carta:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../media/premium.jpg");
+  }
+
+  @keyframes moveBackground {
+    0% {
+      background-position: calc(100vw - 500px) 120px;
+    }
+    100% {
+      background-position: calc(0vw + 500px) 120px;
+    }
+  }
+
+  #container_Information h2 {
+    font-size: 2.5em;
+    overflow: hidden; /* Ocultamos el exceso de letras que se salen durante la animación */
+    white-space: nowrap; /* Evita que las letras se dividan en varias líneas */
+    animation: animateLetters 3s ease-in-out alternate infinite; /* Aplicamos la animación */
+  }
+
+  @keyframes animateLetters {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #container_Information button {
+    font-size: 2em;
+    overflow: hidden; /* Ocultamos el exceso de letras que se salen durante la animación */
+    white-space: nowrap; /* Evita que las letras se dividan en varias líneas */
+    animation: animateLetters 3s ease-in-out alternate infinite; /* Aplicamos la animación */
+  }
+
+  @keyframes animateLeters {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-container img {
+    height: 300px !important;
+    width: 300px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .umg_btnContact {
+    width: auto;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-container img {
+    height: 500px;
+    width: 500px;
+  }
+
+  #nuestros-programas {
+    height: 45rem !important;
+  }
+
+  .umg_card ul {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .umg_container .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .umg_container .row .col-7,
+  .umg_container .row .col-5 {
+    width: 100%;
+  }
+
+  .umg_btnConta {
+    width: 15rem !important;
+    justify-content: center;
+    display: flex;
+  }
+
+  #caracteristicas .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .umg_containerFooter p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #nuestros-programas {
+    height: 100% !important;
+  }
+
+  .umg_card .card-body {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    display: grid;
+  }
+}
